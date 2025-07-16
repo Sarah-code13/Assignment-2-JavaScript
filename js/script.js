@@ -11,9 +11,9 @@ class Smoothie {
         return `You ordered a smoothie with a size ${this.size} with the flavor of ${this.flavor} with the type of milk ${this.milk}, and requested ${addText}.`;
     }
 }
-document.querySelector(".smoothie-form").addEventListener("click", function (event) {
-    let size = document.querySelector(".size-cup").value;
-    let flavor = document.querySelector(".smoothie-flavor").value;
+document.querySelector(".submit").addEventListener("click", function (event) {
+    let size = document.querySelector(".Size-Cup").value;
+    let flavor = document.querySelector(".Smoothie-Flavor").value;
     let milk = document.querySelector(".milk-type").value;
     let addons = [];
 
