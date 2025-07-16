@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>The Smoothie Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Welcome to The Smoothie Machine</h1>
+    <p>Your one-stop shop for delicious and healthy smoothies!</p>
+    <p>Check out our machine below to see our amazing smoothie options!</p>
+    <form class ="smoothie-form">
+        <label for = "Size-Cup">Choose your smoothie size:</label>
+        <select class="Size-Cup" name ="Size-Cup">
+            <option value ="extra-small">Extra Small</option>
+            <option value ="small">Small</option>
+            <option value ="medium">Medium</option>
+            <option value ="large">Large</option>
+            <option value ="extra-large">Extra Large</option>
+        </select>
+        <Label for = "Smoothie-Flavor">Choose your smoothie flavor:</Label>
+        <select class = "Smoothie-Flavor" name="Smoothie-Flavor">
+            <option value ="strawberry">Strawberry</option>
+            <option value ="banana">Banana</option>
+            <option value ="chocolate">Chocolate</option>
+            <option value ="mango">Mango</option>
+            <option value ="green-apple">Green Apple</option>
+            <option value ="pineapple">Pineapple</option>
+            <option value ="mixed-berry">Mixed Berry</option>
+            <option value ="passionfruit">Passion fruit</option>
+        </select>
+        <Label for ="milk-type">Choose your type of milk you want in your smoothie</Label>
+        <select class ="milk-type" name="milk-type">
+            <option value = "whole-milk">Whole Milk</option>
+            <option value = "lactose-free">Lactose Free Milk</option>
+            <option value = "skim-milk">Skim Milk</option>
+            <option value = "almond-milk">Almond Milk</option>
+            <option value = "coconut-milk">Coconut Milk</option>
+        </select>
+        <fieldset>
+            <Label for ="Add-ons">Add ons for your smoothie</Label>
+            <input type ="checkbox" value="no-ice">No Ice
+            <input type ="checkbox" value="less-ice">Less Ice
+            <input type ="checkbox" value="less-sugar">Less Sugar
+            <input type ="checkbox" value="no-sugar">No Sugar
+        </fieldset>
+        <button type ="submit">Order Smoothie</button>
+    </form>
+</body>
+</html>
