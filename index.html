@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>The Smoothie Machine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src = "/js/script.js" defer></script>
 </head>
 <body>
     <h1>Welcome to The Smoothie Machine</h1>
@@ -40,12 +41,13 @@
         </select>
         <fieldset>
             <Label for ="Add-ons">Add ons for your smoothie</Label>
-            <input type ="checkbox" value="no-ice">No Ice
-            <input type ="checkbox" value="less-ice">Less Ice
-            <input type ="checkbox" value="less-sugar">Less Sugar
-            <input type ="checkbox" value="no-sugar">No Sugar
+            <input type ="checkbox" class="addon" value="no-ice">No Ice
+            <input type ="checkbox" class="addon" value="less-ice">Less Ice
+            <input type ="checkbox" class="addon" value="less-sugar">Less Sugar
+            <input type ="checkbox" class="addon" value="no-sugar">No Sugar
         </fieldset>
-        <button type ="submit">Order Smoothie</button>
+        <button type ="button">Order Smoothie</button>
     </form>
+    <div class ="output"></div>
 </body>
 </html>
