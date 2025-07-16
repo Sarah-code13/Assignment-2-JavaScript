@@ -24,7 +24,34 @@ document.querySelector(".submit").addEventListener("click", function (event) {
     output.textContent = order.description();
 
     let smoothieImage = document.createElement("img");
-    smoothieImage.src = "images/smoothieCup.jpg";
+    switch (flavor) {
+        case "strawberry":
+            smoothieImage.src = "images/strawberry.jpg";
+        break;
+        case "banana":
+            smoothieImage.src = "images/banana.jpg";
+        break;
+        case "mango":
+            smoothieImage.src = "images/mango.jpg";
+        break;
+        case "chocolate":
+            smoothieImage.src = "images/chocolate.jpg";
+        break;
+        case "green-apple":
+            smoothieImage.src = "images/greenapple.jpg";
+        break;
+        case "pineapple":
+            smoothieImage.src = "images/pineapple.jpg";
+        break;
+        case "mixed-berry":
+            smoothieImage.src = "images/mixedberry.jpg";
+        break;
+        case "passionfruit":
+            smoothieImage.src = "images/passionfruit.jpg";
+        break;
+        default:
+            smoothieImage.src = "images/smoothieCup.jpg";
+    }
     smoothieImage.height = 150;
     output.appendChild(smoothieImage);
 } );
